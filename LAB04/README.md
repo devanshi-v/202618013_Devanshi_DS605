@@ -98,7 +98,5 @@ Deployed using Streamlit Cloud
 ---
 
 ## Limitations
-- Model shows overfitting (high train accuracy, low test accuracy)
-- Limited feature set (no amenities, ratings, etc.)  
-- Dataset restricted to a specific location (New York)  
+- Model shows overfitting (high train accuracy, low test accuracy)  
 - Outliers in price affect predictions  
