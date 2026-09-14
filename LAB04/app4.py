@@ -13,7 +13,7 @@ MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
 if os.path.exists(MODEL_PATH):
     model = joblib.load(MODEL_PATH)
 else:
-    st.error(f"❌ model.pkl not found at: {MODEL_PATH}")
+    st.error(f"model.pkl not found at: {MODEL_PATH}")
     st.stop()
 # ----------------------------
 # User Inputs
@@ -56,6 +56,6 @@ if st.button("Predict Price"):
 
     try:
         prediction = model.predict(input_data)
-        st.success(f"💰 Estimated Price: ₹{round(prediction[0], 2)} per night")
+        st.success(f"Estimated Price: ₹{round(prediction[0], 2)} per night")
     except Exception as e:
         st.error(f"Prediction error: {e}")
