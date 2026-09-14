@@ -7,17 +7,14 @@ st.set_page_config(page_title="Airbnb Price Predictor", layout="centered")
 
 st.title("🏠 Airbnb Price Predictor")
 
-# ----------------------------
-# Load model safely
-# ----------------------------
-MODEL_PATH = "model.pkl"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
 
 if os.path.exists(MODEL_PATH):
     model = joblib.load(MODEL_PATH)
 else:
-    st.error("❌ model.pkl not found. Please upload your trained model file.")
+    st.error(f"❌ model.pkl not found at: {MODEL_PATH}")
     st.stop()
-
 # ----------------------------
 # User Inputs
 # ----------------------------
