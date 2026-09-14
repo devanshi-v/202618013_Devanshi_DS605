@@ -4,6 +4,7 @@ import numpy as np
 import joblib
 
 # LOAD MODEL (pipeline)
+@st.cache_resource
 model = joblib.load("model.pkl")
 
 st.title("Airbnb Price Predictor")
