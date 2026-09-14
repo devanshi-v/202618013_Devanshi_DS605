@@ -93,7 +93,7 @@ The objective of this project is to build a complete machine learning workflow t
 ## Deployment
 Deployed using Streamlit Cloud  
 
- (Add your deployed app link here)
+ https://202618013devanshids605lab4.streamlit.app/
 
 ---
 
