@@ -36,34 +36,15 @@ if st.button("Predict Price "):
 
     # CREATE INPUT DATAFRAME
     input_data = pd.DataFrame({
-        "room_type": [room_type],
-        "minimum_nights": [minimum_nights],
-        "number_of_reviews": [number_of_reviews],
-        "availability_365": [availability_365],
-        "calculated_host_listings_count": [host_listings],
-        "latitude": [latitude],
-        "longitude": [longitude],
-        "neighbourhood_group": [neighbourhood_group],
-        "neighbourhood": [neighbourhood],
-        "reviews_per_month": [0],
-        "last_review_year": [2020],
-        "last_review_month": [1],
-        "name_length": [0],
-        "name_word_count": [0],
-        "name_char_count_no_space": [0],
-        "has_pool": [0],
-        "has_luxury": [0],
-        "has_view": [0],
-        "has_private": [0],
-        "has_studio": [0],
-        "has_bedroom": [1],
-        "has_reviews": [1],
-        "availability_ratio": [availability_365 / 365],
-        "minimum_nights_log": [np.log1p(minimum_nights)],
-        "number_of_reviews_log": [np.log1p(number_of_reviews)],
-        "reviews_per_month_log": [np.log1p(0 + 1e-6)],
-        "host_listings_log": [np.log1p(host_listings)]
-    })
+    "room_type": [room_type],
+    "minimum_nights": [minimum_nights],
+    "number_of_reviews": [number_of_reviews],
+    "availability_365": [availability_365],
+    "calculated_host_listings_count": [host_listings],
+    "latitude": [latitude],
+    "longitude": [longitude],
+    "neighbourhood_group": [neighbourhood_group]
+})
 
     # PREDICTION
     prediction = model.predict(input_data)
