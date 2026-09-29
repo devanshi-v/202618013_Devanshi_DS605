@@ -52,11 +52,11 @@ SelectKBest(score_func=chi2, k=500)
 
 This reduced dimensionality by **83.33%**.
 
-| Model               | Original F1 | Improved F1 |
-| ------------------- | ----------: | ----------: |
-| Logistic Regression |      0.9704 |      0.9404 |
-| Decision Tree       |      0.8581 |      0.8811 |
-| Random Forest       |      0.9386 |      0.9423 |
+| Model               |  Accuracy |  Precision |  Recall |  F1-Score |  Training Time (s)	 |  Prediction Time (s) |
+| ------------------- | ----------: | ----------: | ----------: | ----------: | ----------: | ----------: |
+| Logistic Regression |      0.9000 |      0.921053 |      0.875 |      0.897436 |      0.008023 |      0.002550 |
+| Decision Tree       |      0.9375 |      0.948718 |      0.925 |      0.936709 |      0.002021 |      0.000604 |
+| Random Forest       |      0.9375 |      0.926829 |      0.950 |      0.938272 |      0.152446 |      0.033186 |
 
 The experiment shows that feature selection reduced the feature space and computational cost, while its effect on predictive performance varied by model.
 
