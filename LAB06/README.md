@@ -31,6 +31,14 @@ This project applies **traditional machine learning and feature extraction** to 
   * Training/prediction time
   * Confusion matrix
 
+
+| Model               |  Accuracy |  Precision |  Recall |  F1-Score |  Training Time (s)	 |  Prediction Time (s) |
+| ------------------- | ----------: | ----------: | ----------: | ----------: | ----------: | ----------: |
+| Logistic Regression |      0.9000 |      0.921053 |      0.875 |      0.897436 |      0.008023 |      0.002550 |
+| Decision Tree       |      0.9375 |      0.948718 |      0.925 |      0.936709 |      0.002021 |      0.000604 |
+| Random Forest       |      0.9375 |      0.926829 |      0.950 |      0.938272 |      0.152446 |      0.033186 |
+
+
 ### Part B — Email Spam Classification
 
 * Dataset: 5,172 emails
@@ -42,6 +50,13 @@ This project applies **traditional machine learning and feature extraction** to 
   * Decision Tree
   * Random Forest
 
+| Model               |  Accuracy |  Precision |  Recall |  F1-Score |  Training Time (s)	 |  Prediction Time (s) |
+| ------------------- | ----------: | ----------: | ----------: | ----------: | ----------: | ----------: |
+| Logistic Regression |      0.9826 |      0.9578 |      0.9833 |      0.9704 |      5.1409 |      0.0355 |
+| Decision Tree       |      0.9188 |      0.8699 |      0.8467 |      0.8581 |      0.7206 |      0.0128 |
+| Random Forest       |      0.9643 |      0.9340 |      0.9433 |      0.9386 |      0.4147 |      0.0415 |
+
+
 ### Part C — Feature Selection
 
 The email representation was reduced from 3,000 to 500 features using:
@@ -51,12 +66,6 @@ SelectKBest(score_func=chi2, k=500)
 ```
 
 This reduced dimensionality by **83.33%**.
-
-| Model               |  Accuracy |  Precision |  Recall |  F1-Score |  Training Time (s)	 |  Prediction Time (s) |
-| ------------------- | ----------: | ----------: | ----------: | ----------: | ----------: | ----------: |
-| Logistic Regression |      0.9000 |      0.921053 |      0.875 |      0.897436 |      0.008023 |      0.002550 |
-| Decision Tree       |      0.9375 |      0.948718 |      0.925 |      0.936709 |      0.002021 |      0.000604 |
-| Random Forest       |      0.9375 |      0.926829 |      0.950 |      0.938272 |      0.152446 |      0.033186 |
 
 The experiment shows that feature selection reduced the feature space and computational cost, while its effect on predictive performance varied by model.
 
