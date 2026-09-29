@@ -61,9 +61,7 @@ This project applies **traditional machine learning and feature extraction** to 
 
 The email representation was reduced from 3,000 to 500 features using:
 
-```python
 SelectKBest(score_func=chi2, k=500)
-```
 
 This reduced dimensionality by **83.33%**.
 
