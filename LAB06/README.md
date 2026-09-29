@@ -6,7 +6,7 @@ This project applies **traditional machine learning and feature extraction** to 
 
 ### Part A — Asphalt Crack Classification
 
-* Dataset: **400 images**
+* Dataset: 400 images
 
   * 200 Crack
   * 200 Non-Crack
@@ -66,5 +66,14 @@ Python 3.13.3, NumPy, Pandas, OpenCV, PIL, Matplotlib, Scikit-learn, Jupyter Not
 
 ## Conclusion
 
-The project demonstrates how appropriate **feature extraction and feature selection** can transform image and text data into representations suitable for traditional machine learning classification.
+The project demonstrates how appropriate feature selection can transform image and text data into representations suitable for traditional machine learning classification.
 
+## Observations
+
+* Grayscale conversion and resizing provided a consistent image representation for extracting numerical features.
+* Intensity-based features and Canny edge features captured useful information for distinguishing crack and non-crack images.
+* For email classification, the original 3,000 numerical word-frequency features produced strong classification performance, particularly for Logistic Regression.
+* Feature selection reduced the email feature space from 3,000 to 500 features, an 83.33% reduction.
+* After feature selection, training and prediction times decreased in the recorded experiments.
+* The effect of feature selection on F1-score varied by model: Decision Tree and Random Forest improved, while Logistic Regression decreased.
+* Therefore, reducing the number of features can lower computational cost, but it does not necessarily improve predictive performance for every classifier.
