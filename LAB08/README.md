@@ -1,7 +1,7 @@
 
 # Banknote Authentication: Decision Tree vs. Linear SVM
 
-## Project Overview
+## Overview
 
 This project uses the **Banknote Authentication dataset** to compare a
 Decision Tree classifier with a Linear Support Vector Machine (SVM).
