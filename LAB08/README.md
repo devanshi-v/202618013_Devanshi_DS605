@@ -77,31 +77,17 @@ The metrics are:
 
 ### Four-feature model comparison
 
-The following results were obtained in the notebook:
 
-| Model                          |         MAE |        RMSE |          R² | Train Time (s) | Prediction Time (s) |
-| ------------------------------ | ----------: | ----------: | ----------: | -------------: | ------------------: |
-| Scikit-learn Linear Regression | **0.108968** | **0.145976** | **0.266219** |    **0.013217** |         **0.000355** |
-| Manual Linear Regression       | **0.108968** | **0.145976** | **0.266219** |    **0.001220** |         **0.000124** |
+|          Model               |    Accuracy   |     Precision    |   Recall   |   F1-score   |  Training Time |
+|     -----------              | ------------  |   ------------   |------------| ------------ | ------------   |
+|  Manual Decision Tree        |     0.9927    |   0.9839         |   1.0000   |    0.9919    |    1.1928      |                                                
 
+|  scikit-learn Decision Tree  |     0.9927    |   0.9839         |   1.0000   |    0.9919    |    0.0066      |                                               
 
-|    Model    |    Accuracy   |     Precision    |   Recall   |   F1-score   |  Training Time |
-|  -----------| ------------  |   ------------   |------------| ------------ | ------------   |
-|  Manual Decision Tree               0.9927       0.9839       1.0000       0.9919       1.1928                                                      
+|  Manual Linear SVM           |     0.9709    |   0.9385         |   1.0000   |    0.9683    |    0.2711      |   
 
-  scikit-learn         0.9927       0.9839       1.0000       0.9919       0.0066
-  Decision Tree                                                      
+|  scikit-learn Linear SVM     |    0.9855     |   0.9683         |   1.0000   |    0.9839    |    0.0095      |                                                   
 
-  Manual Linear        0.9709       0.9385       1.0000       0.9683       0.2711
-  SVM                                                                
-
-  scikit-learn         0.9855       0.9683       1.0000       0.9839       0.0095
-  Linear SVM                                                         
-  -------------------------------------------------------------------------------
-
-**Note:** Times depend on hardware, software versions, and runtime
-conditions. Prediction times are measured separately in the notebook and
-are not included in this table.
 
 ### SVM kernel comparison
 
