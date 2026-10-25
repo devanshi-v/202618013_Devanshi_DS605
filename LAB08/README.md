@@ -29,21 +29,6 @@ features `variance` and `skewness` to visualize decision boundaries.
 -   Discuss interpretability, feature scaling, overfitting, and model
     complexity.
 
-## Dataset
-
-The dataset file used in the notebook is
-`data_banknote_authentication.txt`. It contains four numeric features
-and a binary class label.
-
-The notebook loads the file without a header and assigns these column
-names:
-
-``` python
-["variance", "skewness", "curtosis", "entropy", "class"]
-```
-
-Place the dataset file in the same directory as the Jupyter Notebook
-before running the notebook.
 
 ## Methods
 
