@@ -81,11 +81,8 @@ The metrics are:
 |          Model               |    Accuracy   |     Precision    |   Recall   |   F1-score   |  Training Time |
 |     -----------              | ------------  |   ------------   |------------| ------------ | ------------   |
 |  Manual Decision Tree        |     0.9927    |   0.9839         |   1.0000   |    0.9919    |    1.1928      |                                                
-
 |  scikit-learn Decision Tree  |     0.9927    |   0.9839         |   1.0000   |    0.9919    |    0.0066      |                                               
-
 |  Manual Linear SVM           |     0.9709    |   0.9385         |   1.0000   |    0.9683    |    0.2711      |   
-
 |  scikit-learn Linear SVM     |    0.9855     |   0.9683         |   1.0000   |    0.9839    |    0.0095      |                                                   
 
 
@@ -93,11 +90,11 @@ The metrics are:
 
 Using the two features `variance` and `skewness`, the notebook reported:
 
-  Kernel                    Test accuracy   Training time (seconds)
-  ----------------------- --------------- -------------------------
-  RBF                              0.9127                    0.0072
-  Linear                           0.8764                    0.0331
-  Polynomial (degree 3)            0.8727                    0.0093
+|  Kernel                  |  Test accuracy |  Training time (seconds) |
+|  ----------------------- |--------------- |------------------------- |
+|  RBF                     |     0.9127     |         0.0072           |
+|  Linear                  |     0.8764     |         0.0331           |
+|  Polynomial (degree 3)   |     0.8727     |         0.0093           |
 
 In this two-feature experiment, the RBF kernel achieved the highest test
 accuracy. A nonlinear kernel may help when the relationship between
