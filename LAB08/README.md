@@ -100,40 +100,12 @@ In this two-feature experiment, the RBF kernel achieved the highest test
 accuracy. A nonlinear kernel may help when the relationship between
 features and classes cannot be represented well by a straight boundary.
 
-## Discussion
-
--   **Performance:** The Decision Tree achieved the highest accuracy and
-    F1-score in the four-feature comparison. Both manual and
-    scikit-learn Decision Trees produced the same reported metrics.
--   **Implementation speed:** The scikit-learn implementations trained
-    substantially faster than the manual implementations in this
-    experiment.
--   **Interpretability:** Decision Trees can be interpreted through
-    feature-based splitting rules. A Linear SVM uses a weighted decision
-    boundary and is generally less straightforward to explain.
--   **Feature scaling:** Decision Trees generally do not require feature
-    scaling. Linear SVMs are sensitive to feature scales, so
-    standardization is usually recommended.
--   **Overfitting:** Deep Decision Trees can overfit; limiting tree
-    depth can help. SVM regularization, controlled by `C`, affects the
-    trade-off between margin size and training errors.
--   **Model complexity:** Decision Trees can represent nonlinear
-    decision rules but may become large. A Linear SVM has a linear
-    boundary; nonlinear kernels can model more complex boundaries.
--   **Generalization:** Results are based on one train-test split.
-    Cross-validation would provide a stronger assessment of how
-    consistently the models generalize.
-
 
 ## Conclusion
 
 This project demonstrates the implementation and comparison of Decision
-Tree and Linear SVM classifiers, plus an exploration of nonlinear SVM
+Tree and Linear SVM classifiers, and an exploration of nonlinear SVM
 kernels. On the reported four-feature test split, the Decision Tree
 achieved **99.27% accuracy** and a **99.19% F1-score**. The RBF kernel
 performed best in the separate two-feature kernel experiment, with
 **91.27% accuracy**.
-
-These results apply to the particular split and settings used in the
-notebook; further validation is recommended before drawing broader
-conclusions.
